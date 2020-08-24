@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Boolflix</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <script id="searched-movie-template" type="text/x-handlebars-template">
+      <div class="cards">
+        <img src="{{poster}}" alt="poster">
+        <ul>
+          <li> {{title}} {{name}}</li>
+          <li> {{original_title}} {{original_name}}</li>
+          <li class="flag">{{{original_language}}}</li>
+          <li> Voto: {{{vote_average}}} </li>
+        </ul>
+      </div>
+    </script>
+
+  </head>
+
+  <!-- <body>
+    <div class="container">
+      <div class="searchbar">
+        <input id="query" type="input" name="" value="">
+        <button id="search" type="button" name="button">Ricerca</button>
+      </div>
+
+      <div id="titoli" class="titoli">
+        <ul>
+
+        </ul>
+
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="script.js">
+
+    </script>
+  </body> -->
+  <body>
+    <header>
+      <div class="header">
+        <div id="logo">
+          <h2>BOOLFLIX</h2>
+        </div>
+        <div class="searchbar">
+          <input id="search" type="input" name="" value="">
+          <button id="search-btn"type="button" name="button">cerca</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="titles">
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="script2.js">
+
+    </script>
+  </body>
+
+</html>

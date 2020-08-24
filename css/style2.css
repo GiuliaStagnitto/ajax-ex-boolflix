@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header {
+  padding: 0 5%;
+  display: flex;
+  height: 40px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo h2 {
+  color: red;
+}
+
+/* Main */
+
+.main-container {
+  background-color: grey;
+  overflow-x: hidden;
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  width: 342px;
+  height: 513px;
+  background-color: black;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.poster-img {
+  position: absolute;
+}
+
+/* hover */
+.cards:hover .poster-img {
+  display: none;
+}
+
+/* cards rule */
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+ul li {
+  color: white;
+  font-size: 1.1em;
+}
+.fa-star {
+  color: gold;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+}
+
+.titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
